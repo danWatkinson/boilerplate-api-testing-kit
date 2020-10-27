@@ -2,6 +2,8 @@ project root
 
 docker-compose file here to build everything. means we can separate out 'endpoints we need for our API' vs 'endpoints we need to test our API properly'; also means we're micro-service ready... dev-wise it's trivial to add another service.
 
+NB real bonus is how easy this makes it to run against mongoDB- you can boot mongo along side your service using docker-compose; all still works when doing CI via github actions.. 
+
 scripts here to:
 npm start: build + launch everything via docker-compose
 npm test: build + launch everything via docker-compose, then run the API-tests against it
